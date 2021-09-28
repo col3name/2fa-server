@@ -49,9 +49,9 @@ button:hover {
 }
 
 .verify-code__container {
-    position: relative;
-    margin-top: 17px;
-    display: block;
+    /*position: relative;*/
+    /*margin-top: 17px;*/
+    /*display: block;*/
 }
 
 .verify-code__container:hover .tooltip {
@@ -60,6 +60,33 @@ button:hover {
 }
 .verify-code__container .tooltip {
     /*display: none;*/
-    top: -10px;
+    top: -30px;
     position: absolute;
+}
+
+.verify__block {
+    margin-top: 40px;
+    margin-bottom: 17px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    width: 100%;
+    max-width: 230px;
+    padding: 10px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    /* box-shadow: 0 20px 30px -10px rgb(0 0 0 / 25%); */
+    cursor: pointer;
+}
+
+.verify-code__container input {
+    border: none !important;
+}
+
+.verify-code__container:hover input,
+.verify-code__container:focus input {
+    border: none !important;
+
 }
