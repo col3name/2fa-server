@@ -43,6 +43,8 @@ function main() {
         let remainTimeElem = document.getElementById('remainTime');
         let interval;
         if (secret && secret.length === 32) {
+            inputForm.classList.add('hidden');
+
             resultElem.classList.remove('hidden');
             // interval = setInterval(() => {
             //     let remainSeconds = Number.parseInt(remainTimeElem.innerText);
@@ -74,7 +76,7 @@ function main() {
 
             interval = setInterval(() => {
                 if (time() === 30) {
-                    verifyCode.textContent = code()
+                    verifyCode.value = code()
                 }
 
                 dangerTime()
